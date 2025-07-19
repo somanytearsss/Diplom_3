@@ -1,5 +1,4 @@
 import allure
-
 from src.locators.main_page_locators import MainPageLocators
 from src.pages.base_page import BasePage
 
@@ -52,7 +51,7 @@ class MainPage(BasePage):
 
     @allure.step('Получение числа добавленных ингредиентов')
     def get_count_ingredient_in_basket(self):
-        return  self.get_text_from_element(MainPageLocators.COUNT_INGREDIENT)
+        return self.get_text_from_element(MainPageLocators.COUNT_INGREDIENT)
 
     @allure.step('Закрытие окна "Заказ создан"')
     def close_popup_window_create_order(self):
