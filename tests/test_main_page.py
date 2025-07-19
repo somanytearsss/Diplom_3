@@ -31,7 +31,7 @@ class TestMainPage:
         main_page = MainPage(driver)
         main_page.click_ingredient_in_constructor()
         main_page.close_popup_window_details()
-        assert main_page.check_popup_window_details_closed() is False
+        assert main_page.check_popup_window_details_closed() is True
 
     @allure.title("Проверка, что при добавлении ингредиента в заказ счётчик этого ингредиента увеличивается")
     def test_add_ingredient_and_count_ingredient_increases(self, driver):
