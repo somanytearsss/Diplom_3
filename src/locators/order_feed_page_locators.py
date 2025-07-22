@@ -24,10 +24,10 @@ class OrderFeedPageLocators:
     # Заголовок карточки заказа
     TITLE_ORDER_CARD = By.XPATH, "//*[contains(@class, 'OrderHistory_listItem')]//h2"
     # Номер заказа на странице заказов
-    NUMBER_ORDER_IN_FEED_PAGE = By.XPATH, ".//*[text()='{order_id}']"
+    NUMBER_ORDER_IN_FEED_PAGE = By.XPATH, "//*[contains(text(), '{order_id}')]"
     # Номер карточки заказа
-    ID_ORDER_CARD = (By.XPATH, '(//div[contains(@class, "OrderHistory_textBox")]'
-                               '/p[contains(@class, "text_type_digits-default")])[1]')
+    ID_ORDER_CARD = (By.XPATH, '//div[contains(@class, "OrderHistory_textBox")]'
+                               '//p[contains(@class, "text_type_digits-default")]')
     # Номер заказа в работе
     NUMBER_ORDER_IN_WORK = (By.XPATH, '//ul[contains(@class, '
                                              '"OrderFeed_orderListReady")]/li[contains(@class, '
