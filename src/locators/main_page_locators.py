@@ -14,11 +14,6 @@ class MainPageLocators:
     CONSTRUCTOR_HEADER = By.XPATH, "//p[contains(@class, 'AppHeader_header__linkText__3q_va' ) and text()='Конструктор']"
     # Ссылка на ингредиент
     INGREDIENT_LINK = By.XPATH, "//p[contains(@class, 'BurgerIngredient_ingredient__text__yp3dH']) and text()='Флюоресцентная булка R2-D3']"
-    # Ссылка на логотип стеллар бургер в хидере
-    STELLAR_BURGER_HEADER = By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']"
-    # Кнопка лента заказов
-    BUTTON_FEED_ORDERS_HEADER = By.XPATH, "//p[contains(., 'Лента Заказов')]"
-    # BUTTON_FEED_ORDERS_HEADER = By.XPATH, "//p[contains(@class, 'AppHeader_header__linkText__3q_va' ) and text()='Лента Заказов']"
     # Текст в конструкторе "Лента Заказов"
     FEED_BUTTON = By.XPATH, "//p[contains(text(),'Лента Заказов')]"
     # Текст в конструкторе "Соберите бургер"
